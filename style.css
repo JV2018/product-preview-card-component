@@ -13,5 +13,122 @@
 }
 
 body {
+    margin: 0;
+    padding: 1.75rem 1rem;
     font-size: 0.875rem;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 23.4375rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.perfume-img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.main-container {
+    padding: 1.5rem;
+}
+
+.section-category {
+    color: var(--aurometal-saurus);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 0.75rem;
+}
+
+.perfume-name {
+    color: var(--gunmetal);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.perfume-description {
+    color: var(--aurometal-saurus);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25em;
+}
+
+.actual-price {
+    color: var(--deep-aquamarine);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+    line-height: 1;
+    margin-right: 1.25rem;
+}
+
+.previous-price {
+    color: var(--aurometal-saurus);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 1.75;
+    text-decoration: line-through;
+}
+
+.add-cart-btn {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--deep-aquamarine);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Check style guide for all active states */
+
+.add-cart-btn:hover {
+    background-color: var(--deep-aquamarine-hover);
+    cursor: pointer;
+}
+
+.cart-icon {
+    margin-right: 0.75rem;
+}
+
+h1, p {
+    margin: 0;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 37.5rem;
+        display: flex;
+    }
+
+    .header-img {
+        width: 50%;
+    }
+
+    .main-container {
+        width: 50%;
+    }
 }
