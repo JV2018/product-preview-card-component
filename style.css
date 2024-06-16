@@ -103,8 +103,6 @@ body {
     align-items: center;
 }
 
-/* Check style guide for all active states */
-
 .add-cart-btn:hover {
     background-color: var(--deep-aquamarine-hover);
     cursor: pointer;
