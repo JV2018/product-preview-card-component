@@ -36,11 +36,12 @@ body {
     border-top-left-radius: 10px;
 }
 
-.main-container {
+.text-container {
     padding: 1.5rem;
 }
 
-.section-category {
+.product-category {
+    text-transform: uppercase;
     color: var(--aurometal-saurus);
     font-size: 0.75rem;
     font-weight: 500;
@@ -68,7 +69,7 @@ body {
 .price-container {
     display: flex;
     align-items: center;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.25rem;
 }
 
 .actual-price {
@@ -85,7 +86,6 @@ body {
     font-size: 0.8125rem;
     font-weight: 500;
     line-height: 1.75;
-    text-decoration: line-through;
 }
 
 .add-cart-btn {
@@ -118,17 +118,51 @@ h1, p {
     margin: 0;
 }
 
-@media (min-width: 1440px) {
+
+
+@media (min-width: 1024px) {
     .container {
-        width: 37.5rem;
         display: flex;
+        width: 33rem;
     }
 
-    .header-img {
+    .img-container {
         width: 50%;
     }
 
-    .main-container {
+    .perfume-img {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        height: 100%;
+    }
+
+    .text-container {
         width: 50%;
     }
 }
+
+@media (min-width: 1440px) {
+    .container {
+        width: 37.5rem;
+    }
+
+    .text-container {
+        padding: 2rem;
+    }
+
+    .product-category {
+        margin-bottom: 1.25rem;
+    }
+
+    .perfume-name {
+        margin-bottom: 1.5rem;
+    }
+
+    .perfume-description {
+        margin-bottom: 1.75rem;
+    }
+
+    .price-container {
+        margin-bottom: 1.875rem;
+    }
+} 
